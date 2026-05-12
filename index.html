@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>SURA — A Modern Korean Dining Experience in Jakarta</title>
+<meta name="description" content="SURA is a modern Korean dining brand in Jakarta. Wagyu Hamburg Steak, Tteokgalbi, premium rice, six signature sauces, and a live kitchen — inspired by the royal meal served to Korean kings." />
+<meta property="og:title" content="SURA — Modern Korean Dining in Jakarta" />
+<meta property="og:description" content="The Taste of Happiness, Crafted with Care. Wagyu Hamburg Steak, Tteokgalbi, and six signature sauces — at Lippo Mall Puri, Lotte Mall, Gandaria City, and Summarecon Kelapa Gading." />
+<meta property="og:type" content="restaurant" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Outfit:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          display: ['"Fraunces"', 'ui-serif', 'Georgia', 'serif'],
+          sans: ['"Outfit"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+        },
+        colors: {
+          ink: {
+            950: '#0a0908',
+            900: '#11100e',
+            800: '#1a1916',
+            700: '#26241f',
+            600: '#3a3731',
+            500: '#5a5650',
+            400: '#8a8377',
+            300: '#b7b0a3',
+            200: '#d8d2c5',
+            100: '#ece8df',
+            50:  '#f6f3ec',
+          },
+          ember: {
+            DEFAULT: '#b8864a',
+            400: '#caa069',
+            500: '#b8864a',
+            600: '#9a6f3a',
+          },
+        },
+        letterSpacing: {
+          'tightest-2': '-0.045em',
+        },
+        boxShadow: {
+          'card': '0 30px 60px -30px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.04)',
+        },
+      }
+    }
+  }
+</script>
+
+<style>
+  :root { color-scheme: dark; }
+  html, body { background:#0a0908; }
+  body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "ss01","ss02","cv01";
+  }
+  /* Grain overlay — pinned, pointer-event-none */
+  .grain::before{
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:60;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.55'/></svg>");
+    opacity:.06; mix-blend-mode:overlay;
+  }
+  /* Selection */
+  ::selection { background:#b8864a; color:#0a0908; }
+
+  /* Marquee */
+  @keyframes marquee { from{transform:translate3d(0,0,0)} to{transform:translate3d(-50%,0,0)} }
+  .marquee-track{ animation: marquee 38s linear infinite; }
+
+  /* Reveal */
+  .reveal { opacity:0; transform: translate3d(0,28px,0); transition: opacity 1.1s cubic-bezier(.16,1,.3,1), transform 1.1s cubic-bezier(.16,1,.3,1); }
+  .reveal.in { opacity:1; transform: translate3d(0,0,0); }
+  .reveal-stagger > * { opacity:0; transform: translate3d(0,22px,0); transition: opacity .9s cubic-bezier(.16,1,.3,1), transform .9s cubic-bezier(.16,1,.3,1); }
+  .reveal-stagger.in > * { opacity:1; transform: translate3d(0,0,0); }
+  .reveal-stagger.in > *:nth-child(1){ transition-delay: 60ms; }
+  .reveal-stagger.in > *:nth-child(2){ transition-delay: 140ms; }
+  .reveal-stagger.in > *:nth-child(3){ transition-delay: 220ms; }
+  .reveal-stagger.in > *:nth-child(4){ transition-delay: 300ms; }
+  .reveal-stagger.in > *:nth-child(5){ transition-delay: 380ms; }
+  .reveal-stagger.in > *:nth-child(6){ transition-delay: 460ms; }
+
+  /* Hero edge-fade only — keep the video and its baked subtitles crisp.
+     A thin top vignette protects the nav, a thin bottom fade joins the next section. */
+  .hero-fade{
+    background:
+      linear-gradient(180deg, rgba(10,9,8,.55) 0%, rgba(10,9,8,0) 14%, rgba(10,9,8,0) 78%, rgba(10,9,8,.85) 96%, rgba(10,9,8,1) 100%);
+  }
+  /* Mid-section cinematic video — full frame, no crop.
+     Section sizes to the video's native 16:9 ratio (max one viewport).
+     Aspect-ratio guarantees the video never letterboxes inside its own section. */
+  .cinema-section{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    max-height: 100dvh;
+  }
+  /* On very tall or very wide viewports the aspect-ratio rule already caps
+     the section, but we keep a sensible minimum so the moment lands on mobile. */
+  @media (max-width: 768px){
+    .cinema-section{ min-height: 50dvh; }
+  }
+
+  /* Card edge refraction */
+  .glass-edge{
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.06),
+      inset 0 0 0 1px rgba(255,255,255,0.04),
+      0 30px 60px -30px rgba(0,0,0,0.6);
+  }
+
+  /* Tactile press */
+  .press:active { transform: translateY(1px) scale(.995); }
+
+  /* Underline rule */
+  .rule{ background: linear-gradient(90deg, rgba(255,255,255,.18), rgba(255,255,255,0)); height:1px; }
+
+  /* Caret blink for hero */
+  @keyframes caret { 0%,100%{opacity:0} 40%,60%{opacity:1} }
+  .caret{ display:inline-block; width:.55ch; transform:translateY(-.05em); animation: caret 1.1s steps(1) infinite; }
+
+  /* Quiet scrollbar */
+  ::-webkit-scrollbar{ width:10px; height:10px }
+  ::-webkit-scrollbar-thumb{ background:#26241f; border-radius:10px }
+  ::-webkit-scrollbar-track{ background:#0a0908 }
+
+  /* Number serif italic for Fraunces */
+  .fr-italic{ font-style: italic; font-variation-settings: "SOFT" 100, "WONK" 1; }
+
+  /* Pinned video aspect helper */
+  .video-cover{ object-fit:cover; }
+</style>
+</head>
+<body class="font-sans text-ink-100 antialiased grain selection:bg-ember/80">
+
+<!-- ───────── NAVIGATION ───────── -->
+<header id="nav" class="fixed inset-x-0 top-0 z-50 transition-[backdrop-filter,background,border-color] duration-500 border-b border-transparent">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10 h-[68px] flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-3 group press" aria-label="SURA home">
+      <!-- Brand mark -->
+      <svg viewBox="0 0 32 32" class="w-7 h-7 text-ember" aria-hidden="true">
+        <circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path d="M8 20c1.6-3.5 4-5 8-5s6.4 1.5 8 5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        <circle cx="16" cy="12" r="1.4" fill="currentColor"/>
+      </svg>
+      <span class="font-display text-[19px] tracking-tightest-2 leading-none">
+        SURA<span class="text-ember">.</span>
+      </span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-9 text-[13.5px] text-ink-300">
+      <a href="#story" class="hover:text-ink-50 transition">Our Story</a>
+      <a href="#menu" class="hover:text-ink-50 transition">Experience</a>
+      <a href="#ritual" class="hover:text-ink-50 transition">The Ritual</a>
+      <a href="#visit" class="hover:text-ink-50 transition">Locations</a>
+    </nav>
+
+    <a href="https://wa.me/" class="press group inline-flex items-center gap-2 h-10 pl-4 pr-3 rounded-full bg-ink-50 text-ink-950 text-[13px] tracking-tight hover:bg-white transition">
+      Contact us
+      <span class="grid place-items-center w-7 h-7 rounded-full bg-ink-950 text-ink-50 group-hover:bg-ember group-hover:text-ink-950 transition">
+        <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+  </div>
+</header>
+
+<!-- ───────── HERO ───────── -->
+<section id="top" class="relative min-h-[100dvh] w-full overflow-hidden">
+  <video
+    id="heroVideo"
+    class="absolute inset-0 w-full h-full video-cover"
+    autoplay muted playsinline preload="auto"
+    poster="assets/hero-poster.jpg"
+    aria-hidden="true">
+    <source src="assets/hero.mp4" type="video/mp4" />
+  </video>
+  <div class="absolute inset-0 hero-fade"></div>
+
+  <!-- Minimal hero overlay — corner marks only, no headline copy.
+       The video carries the brand message via its baked-in captions. -->
+  <div class="absolute inset-x-0 bottom-0 z-10">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-10 pb-8 md:pb-10 flex items-end justify-between gap-6">
+      <span class="font-mono text-[10.5px] tracking-[0.22em] uppercase text-ink-200/70">Jakarta · Indonesia</span>
+      <span class="hidden md:inline-flex items-center gap-3 text-[10.5px] tracking-[0.22em] uppercase text-ink-200/70">
+        Scroll
+        <span class="relative inline-block w-px h-8 bg-ink-200/25 overflow-hidden">
+          <span class="absolute inset-x-0 top-0 h-2.5 bg-ember animate-[caret_1.6s_ease-in-out_infinite]"></span>
+        </span>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── KINETIC MARQUEE ───────── -->
+<section aria-hidden="true" class="relative border-y border-white/[0.06] bg-ink-950 overflow-hidden">
+  <div class="flex marquee-track whitespace-nowrap py-6 will-change-transform">
+    <div class="flex items-center gap-12 px-6 font-display fr-italic text-ink-200/80 text-3xl md:text-4xl">
+      <span>Wagyu Hamburg Steak</span><span class="text-ember">·</span>
+      <span>Tteokgalbi</span><span class="text-ember">·</span>
+      <span>Six Signature Sauces</span><span class="text-ember">·</span>
+      <span>Live Kitchen</span><span class="text-ember">·</span>
+      <span>Premium Rice</span><span class="text-ember">·</span>
+      <span>Crafted with Care</span><span class="text-ember">·</span>
+    </div>
+    <div class="flex items-center gap-12 px-6 font-display fr-italic text-ink-200/80 text-3xl md:text-4xl" aria-hidden="true">
+      <span>Wagyu Hamburg Steak</span><span class="text-ember">·</span>
+      <span>Tteokgalbi</span><span class="text-ember">·</span>
+      <span>Six Signature Sauces</span><span class="text-ember">·</span>
+      <span>Live Kitchen</span><span class="text-ember">·</span>
+      <span>Premium Rice</span><span class="text-ember">·</span>
+      <span>Crafted with Care</span><span class="text-ember">·</span>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── STORY — Brand meaning + founder history ───────── -->
+<section id="story" class="relative py-28 md:py-40">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+    <div class="grid grid-cols-12 gap-8 md:gap-16">
+      <div class="col-span-12 md:col-span-4 reveal">
+        <div class="flex items-center gap-3 text-[11px] tracking-[0.22em] uppercase text-ember">
+          <span class="w-6 h-px bg-ember"></span> Chapter 01 — Our Name
+        </div>
+        <p class="mt-6 font-mono text-[12px] text-ink-300 leading-relaxed">
+          <span class="text-ink-50">SURA</span> is the Korean word for the royal
+          meal once served to Korean kings. It carries the spirit of
+          care, dignity, and sincere hospitality — the way every guest
+          deserves to be treated.
+        </p>
+        <p class="mt-5 font-mono text-[12px] text-ink-300 leading-relaxed">
+          Built on years of restaurant experience across Korea, China,
+          and now Indonesia — from <span class="text-ink-50">Shanghai</span>,
+          <span class="text-ink-50">Suzhou</span>, <span class="text-ink-50">Nanjing</span>,
+          <span class="text-ink-50">Changzhou</span> and <span class="text-ink-50">Wuxi</span>
+          since 2008, to today in Jakarta.
+        </p>
+      </div>
+      <div class="col-span-12 md:col-span-8 reveal">
+        <h2 class="font-display font-light text-4xl md:text-[5.4rem] leading-[0.95] tracking-tightest-2 text-ink-50">
+          A royal meal,<br/>
+          <span class="fr-italic text-ember">served to every guest.</span>
+        </h2>
+        <p class="mt-10 max-w-[60ch] text-ink-300 leading-relaxed text-[15.5px]">
+          SURA reinterprets the spirit of Korean royal dining for the
+          modern Jakarta lifestyle — premium without distance, Korean
+          without rigidity, modern without losing warmth. Every meal
+          is prepared with the belief that good food should make
+          people feel welcomed, satisfied, and remembered.
+        </p>
+        <div class="mt-10 inline-flex items-center gap-4 px-5 py-3 rounded-full border border-white/[0.08] bg-white/[0.02]">
+          <span class="w-1.5 h-1.5 rounded-full bg-ember"></span>
+          <span class="font-display fr-italic text-ink-100 text-lg md:text-xl">The Taste of Happiness, Crafted with Care.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── MID-SECTION CINEMATIC VIDEO (autoplay loop) ───────── -->
+<section id="fire" class="relative cinema-section overflow-hidden bg-ink-950">
+  <video
+    id="cinemaVideo"
+    class="absolute inset-0 w-full h-full object-contain bg-ink-950"
+    autoplay muted loop playsinline preload="auto"
+    poster="assets/scroll-poster.jpg"
+    aria-hidden="true">
+    <source src="assets/scroll.mp4" type="video/mp4" />
+  </video>
+
+</section>
+
+<!-- ───────── THE EXPERIENCE — BENTO CARDS ───────── -->
+<section id="menu" class="relative py-28 md:py-40">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+    <div class="flex items-end justify-between gap-6 mb-14 md:mb-20 reveal">
+      <div>
+        <div class="flex items-center gap-3 text-[11px] tracking-[0.22em] uppercase text-ember">
+          <span class="w-6 h-px bg-ember"></span> Chapter 02 — The Experience
+        </div>
+        <h2 class="mt-6 font-display font-light text-4xl md:text-7xl leading-[0.95] tracking-tightest-2 text-ink-50 max-w-[20ch]">
+          Crafted with care, <span class="fr-italic text-ember">served with warmth.</span>
+        </h2>
+      </div>
+      <p class="hidden md:block max-w-[30ch] text-ink-300 text-[14.5px] leading-relaxed">
+        Not just Korean BBQ. Not just a steak restaurant. SURA is a complete Korean dining experience — designed around the meal, the moment, and the way every guest is served.
+      </p>
+    </div>
+
+    <!-- Bento grid -->
+    <div class="grid grid-cols-12 gap-5 md:gap-6 reveal-stagger">
+
+      <!-- 1. SIGNATURE COMBO (col 7, large image card) -->
+      <article class="col-span-12 md:col-span-7 group relative overflow-hidden rounded-[2rem] md:rounded-[2.5rem] glass-edge">
+        <img
+          src="assets/menu-combo.jpg"
+          alt="SURA Signature Combo — Wagyu Hamburg Steak and Tteokgalbi with Korean side dishes"
+          class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/55 to-ink-950/10"></div>
+        <div class="relative h-full min-h-[420px] md:min-h-[480px] p-8 md:p-10 flex flex-col justify-end">
+          <div class="flex items-center gap-2 text-[11px] tracking-[0.22em] uppercase text-ember mb-4">
+            <span class="w-6 h-px bg-ember"></span> Signature Combo · Most loved
+          </div>
+          <h3 class="font-display text-3xl md:text-5xl leading-[0.95] tracking-tightest-2">
+            One set. <span class="fr-italic text-ember">Two signatures.</span><br/>
+            A complete Korean dining moment.
+          </h3>
+          <p class="mt-4 text-ink-200/90 text-[14.5px] leading-relaxed max-w-[44ch]">
+            Wagyu Hamburg Steak and Tteokgalbi together with premium rice, Korean soup, six signature sauces, pickles, and egg. The safest, fullest way to discover SURA — designed for first-time guests.
+          </p>
+          <div class="mt-6 flex items-center gap-3 font-mono text-[11.5px] text-ink-300">
+            <span class="text-ink-50">Wagyu</span>
+            <span class="w-1 h-1 rounded-full bg-ember"></span>
+            <span class="text-ink-50">Tteokgalbi</span>
+            <span class="w-1 h-1 rounded-full bg-ember"></span>
+            <span class="text-ink-50">Rice</span>
+            <span class="w-1 h-1 rounded-full bg-ember"></span>
+            <span class="text-ink-50">Soup</span>
+            <span class="w-1 h-1 rounded-full bg-ember"></span>
+            <span class="text-ink-50">6 Sauces</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. SIX SIGNATURE SAUCES (col 5) -->
+      <article class="col-span-12 md:col-span-5 group relative overflow-hidden rounded-[2rem] md:rounded-[2.5rem] bg-ink-900/80 glass-edge p-8 md:p-10">
+        <div class="flex items-center gap-2 text-[11px] tracking-[0.22em] uppercase text-ember">
+          <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v8M5 10c0 4 3 7 7 7s7-3 7-7M9 21h6"/></svg>
+          Six Signature Sauces
+        </div>
+        <h3 class="mt-5 font-display text-3xl md:text-[2.4rem] leading-[0.95] tracking-tightest-2">
+          Same meat,<br/><span class="fr-italic text-ember">six ways</span> to enjoy it.
+        </h3>
+        <p class="mt-3 text-ink-200/90 text-[14.5px] leading-relaxed max-w-[34ch]">
+          Start with the original flavor — no sauce. Then explore six directions and find your favorite bite.
+        </p>
+        <ul class="mt-6 font-mono text-[12.5px] text-ink-300 divide-y divide-white/[0.06]">
+          <li class="flex items-center justify-between py-2.5"><span class="text-ink-50">Korean Soy</span><span>deep · savory</span></li>
+          <li class="flex items-center justify-between py-2.5"><span class="text-ink-50">Yuzu Mayo</span><span>bright · creamy</span></li>
+          <li class="flex items-center justify-between py-2.5"><span class="text-ink-50">Garlic Salt</span><span>clean · pure</span></li>
+          <li class="flex items-center justify-between py-2.5"><span class="text-ink-50">Sambal</span><span>familiar · bold</span></li>
+          <li class="flex items-center justify-between py-2.5"><span class="text-ink-50">Spicy Gochu</span><span>warm · Korean</span></li>
+          <li class="flex items-center justify-between py-2.5"><span class="text-ink-50">House Special</span><span>SURA · only here</span></li>
+        </ul>
+      </article>
+
+      <!-- 3. WAGYU HAMBURG STEAK (col 4, image) -->
+      <article class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-[2rem] md:rounded-[2.5rem] glass-edge">
+        <img
+          src="assets/menu-wagyu.jpg"
+          alt="SURA Wagyu Hamburg Steak — tender, juicy, served hot"
+          class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/50 to-transparent"></div>
+        <div class="relative h-full min-h-[380px] p-8 md:p-10 flex flex-col justify-end">
+          <div class="flex items-center gap-2 text-[11px] tracking-[0.22em] uppercase text-ember mb-4">
+            <span class="w-6 h-px bg-ember"></span> Signature
+          </div>
+          <h3 class="font-display text-3xl md:text-4xl leading-[0.95] tracking-tightest-2">
+            Wagyu <span class="fr-italic text-ember">Hamburg Steak</span>
+          </h3>
+          <p class="mt-3 text-ink-200/90 text-[14.5px] leading-relaxed max-w-[32ch]">
+            Tender, juicy, rich. Served hot for the best aroma and texture. Take the first bite without sauce — the meat speaks first.
+          </p>
+        </div>
+      </article>
+
+      <!-- 4. THE RITUAL (col 4) -->
+      <article id="ritual" class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-[2rem] md:rounded-[2.5rem] bg-ember/[0.07] glass-edge p-8 md:p-10">
+        <div class="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-ember/15 blur-3xl pointer-events-none"></div>
+        <div class="relative">
+          <div class="flex items-center gap-2 text-[11px] tracking-[0.22em] uppercase text-ember">
+            <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M2 12h20"/></svg>
+            The SURA Ritual
+          </div>
+          <h3 class="mt-5 font-display text-3xl md:text-4xl leading-[0.95] tracking-tightest-2">
+            How to eat <span class="fr-italic text-ember">at SURA.</span>
+          </h3>
+          <ol class="mt-7 space-y-5">
+            <li class="flex gap-4">
+              <span class="font-mono text-[11px] text-ember mt-1">01</span>
+              <div>
+                <div class="text-ink-50 text-[14.5px]">Anticipate</div>
+                <p class="mt-1 text-[13px] text-ink-300 leading-relaxed max-w-[28ch]">Table setting, aroma, kitchen sound — the meal begins before the first dish arrives.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="font-mono text-[11px] text-ember mt-1">02</span>
+              <div>
+                <div class="text-ink-50 text-[14.5px]">First bite, no sauce</div>
+                <p class="mt-1 text-[13px] text-ink-300 leading-relaxed max-w-[28ch]">Taste the meat first. Then discover your favorite among the six sauces.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="font-mono text-[11px] text-ember mt-1">03</span>
+              <div>
+                <div class="text-ink-50 text-[14.5px]">Finish the Korean way</div>
+                <p class="mt-1 text-[13px] text-ink-300 leading-relaxed max-w-[28ch]">Rice, remaining meat, egg, and sauce together — a final mixed bite to remember.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </article>
+
+      <!-- 5. TTEOKGALBI (col 4, image) -->
+      <article class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-[2rem] md:rounded-[2.5rem] glass-edge">
+        <img
+          src="assets/menu-tteokgalbi.jpg"
+          alt="SURA Tteokgalbi — royal-style Korean grilled meat"
+          class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/50 to-transparent"></div>
+        <div class="relative h-full min-h-[380px] p-8 md:p-10 flex flex-col justify-end">
+          <div class="flex items-center gap-2 text-[11px] tracking-[0.22em] uppercase text-ember mb-4">
+            <span class="w-6 h-px bg-ember"></span> Royal Korean
+          </div>
+          <h3 class="font-display text-3xl md:text-4xl leading-[0.95] tracking-tightest-2">
+            <span class="fr-italic text-ember">Tteokgalbi</span>
+          </h3>
+          <p class="mt-3 text-ink-200/90 text-[14.5px] leading-relaxed max-w-[32ch]">
+            Royal-style Korean grilled meat. Savory, tender, slightly sweet — and perfect with warm rice.
+          </p>
+        </div>
+      </article>
+
+      <!-- 6. LIVE KITCHEN (col 7, wide image) -->
+      <article class="col-span-12 md:col-span-7 group relative overflow-hidden rounded-[2rem] md:rounded-[2.5rem] glass-edge">
+        <img
+          src="assets/menu-kitchen.jpg"
+          alt="SURA Live Kitchen — meat cooked in front of you"
+          class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]" />
+        <div class="absolute inset-0 bg-gradient-to-r from-ink-950/85 via-ink-950/30 to-transparent"></div>
+        <div class="relative h-full min-h-[360px] p-8 md:p-10 flex flex-col justify-end max-w-2xl">
+          <div class="flex items-center gap-2 text-[11px] tracking-[0.22em] uppercase text-ember mb-4">
+            <span class="w-6 h-px bg-ember"></span> Live Kitchen
+          </div>
+          <h3 class="font-display text-3xl md:text-5xl leading-[0.95] tracking-tightest-2">
+            Cooked <span class="fr-italic text-ember">in front of you.</span>
+          </h3>
+          <p class="mt-4 text-ink-200/90 text-[14.5px] leading-relaxed max-w-[44ch]">
+            Watch the food come alive before it reaches your table. The sound of the grill, the aroma, the heat — part of the SURA experience, served at the moment it's ready.
+          </p>
+        </div>
+      </article>
+
+      <!-- 7. ADD-ONS (col 5) -->
+      <article class="col-span-12 md:col-span-5 group relative overflow-hidden rounded-[2rem] md:rounded-[2.5rem] bg-ink-900/80 glass-edge p-8 md:p-10">
+        <div class="flex items-center gap-2 text-[11px] tracking-[0.22em] uppercase text-ember">
+          <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+          Make it bigger
+        </div>
+        <h3 class="mt-5 font-display text-3xl md:text-[2.4rem] leading-[0.95] tracking-tightest-2">
+          Build a richer<br/><span class="fr-italic text-ember">SURA table.</span>
+        </h3>
+        <p class="mt-3 text-ink-200/90 text-[14.5px] leading-relaxed max-w-[34ch]">
+          Premium add-ons — perfect for sharing, upgrading, and making the meal more memorable.
+        </p>
+        <div class="mt-7 grid grid-cols-2 gap-3 font-mono text-[12.5px]">
+          <div class="rounded-2xl border border-white/[0.08] p-4">
+            <div class="text-ink-50">Wagyu Steak</div>
+            <div class="mt-1 text-ink-400">Signature Steak</div>
+          </div>
+          <div class="rounded-2xl border border-white/[0.08] p-4">
+            <div class="text-ink-50">Tteokgalbi</div>
+            <div class="mt-1 text-ink-400">Korean Traditional Food</div>
+          </div>
+          <div class="rounded-2xl border border-white/[0.08] p-4">
+            <div class="text-ink-50">Chicken Steak</div>
+            <div class="mt-1 text-ink-400">Spicy &amp; Tender</div>
+          </div>
+          <div class="rounded-2xl border border-white/[0.08] p-4">
+            <div class="text-ink-50">Cheese Steak</div>
+            <div class="mt-1 text-ink-400">Soft · rich</div>
+          </div>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1YH381mY93mLAXMShXFht9TNV6ReB9pQD?usp=drive_link" target="_blank" rel="noopener" class="press mt-7 inline-flex items-center gap-2 h-11 px-5 rounded-full bg-ink-50 text-ink-950 text-[13px] hover:bg-white transition">
+          See the full menu
+          <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ───────── LOCATIONS — 4 stores across Jakarta ───────── -->
+<section id="visit" class="relative py-28 md:py-40 border-t border-white/[0.06]">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+    <div class="flex items-end justify-between gap-6 mb-14 md:mb-20 reveal">
+      <div>
+        <div class="flex items-center gap-3 text-[11px] tracking-[0.22em] uppercase text-ember">
+          <span class="w-6 h-px bg-ember"></span> Chapter 03 — Find SURA
+        </div>
+        <h2 class="mt-6 font-display font-light text-4xl md:text-7xl leading-[0.95] tracking-tightest-2 text-ink-50 max-w-[18ch]">
+          Four stores, <span class="fr-italic text-ember">across Jakarta.</span>
+        </h2>
+      </div>
+      <p class="hidden md:block max-w-[30ch] text-ink-300 text-[14.5px] leading-relaxed">
+        Centrally operated with consistent quality. Open Google Maps to plan your visit, or message your nearest store on WhatsApp.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-12 gap-5 md:gap-6 reveal-stagger">
+
+      <!-- Lotte Mall Jakarta (premium) -->
+      <article class="col-span-12 md:col-span-6 group relative overflow-hidden rounded-[2rem] md:rounded-[2.5rem] bg-ember/[0.07] glass-edge p-8 md:p-10">
+        <div class="absolute -top-24 -right-20 w-72 h-72 rounded-full bg-ember/15 blur-3xl pointer-events-none"></div>
+        <div class="relative">
+          <div class="flex items-center justify-between gap-4">
+            <div class="flex items-center gap-2 text-[11px] tracking-[0.22em] uppercase text-ember">
+              <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              Premium destination
+            </div>
+            <span class="font-mono text-[10.5px] text-ink-300">01 / 04</span>
+          </div>
+          <h3 class="mt-5 font-display text-3xl md:text-4xl leading-[0.95] tracking-tightest-2">SURA<br/>Lotte Mall Jakarta</h3>
+          <p class="mt-3 text-ink-200/90 text-[14.5px] leading-relaxed max-w-[34ch]">
+            A premium shopping destination for food, lifestyle, and dining. Suitable for lunch, dinner, dates, and shopping-day meals.
+          </p>
+          <div class="mt-7 grid grid-cols-2 gap-3">
+            <a href="https://www.google.com/maps/search/SURA+Lotte+Mall+Jakarta" target="_blank" rel="noopener" class="press inline-flex items-center justify-between h-11 px-4 rounded-full bg-ink-50 text-ink-950 text-[13px] tracking-tight hover:bg-white transition">
+              Open in Maps
+              <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://wa.me/" target="_blank" rel="noopener" class="press inline-flex items-center justify-between h-11 px-4 rounded-full border border-white/15 text-[13px] hover:bg-white/5 transition">
+              WhatsApp
+              <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Lippo Mall Puri (West Jakarta) -->
+      <article class="col-span-12 md:col-span-6 group relative overflow-hidden rounded-[2rem] md:rounded-[2.5rem] bg-ink-900/80 glass-edge p-8 md:p-10">
+        <div class="flex items-center justify-between gap-4">
+          <div class="flex items-center gap-2 text-[11px] tracking-[0.22em] uppercase text-ember">
+            <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            West Jakarta
+          </div>
+          <span class="font-mono text-[10.5px] text-ink-300">02 / 04</span>
+        </div>
+        <h3 class="mt-5 font-display text-3xl md:text-4xl leading-[0.95] tracking-tightest-2">SURA<br/>Lippo Mall Puri</h3>
+        <p class="mt-3 text-ink-200/90 text-[14.5px] leading-relaxed max-w-[34ch]">
+          One of SURA's most popular stores. Comfortable for families, mall visitors, and regular guests in West Jakarta.
+        </p>
+        <div class="mt-7 grid grid-cols-2 gap-3">
+          <a href="https://www.google.com/maps/search/SURA+Lippo+Mall+Puri" target="_blank" rel="noopener" class="press inline-flex items-center justify-between h-11 px-4 rounded-full bg-ink-50 text-ink-950 text-[13px] tracking-tight hover:bg-white transition">
+            Open in Maps
+            <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://wa.me/" target="_blank" rel="noopener" class="press inline-flex items-center justify-between h-11 px-4 rounded-full border border-white/15 text-[13px] hover:bg-white/5 transition">
+            WhatsApp
+            <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Gandaria City (South Jakarta) -->
+      <article class="col-span-12 md:col-span-6 group relative overflow-hidden rounded-[2rem] md:rounded-[2.5rem] bg-ink-900/80 glass-edge p-8 md:p-10">
+        <div class="flex items-center justify-between gap-4">
+          <div class="flex items-center gap-2 text-[11px] tracking-[0.22em] uppercase text-ember">
+            <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            South Jakarta
+          </div>
+          <span class="font-mono text-[10.5px] text-ink-300">03 / 04</span>
+        </div>
+        <h3 class="mt-5 font-display text-3xl md:text-4xl leading-[0.95] tracking-tightest-2">SURA<br/>Gandaria City</h3>
+        <p class="mt-3 text-ink-200/90 text-[14.5px] leading-relaxed max-w-[34ch]">
+          Modern Korean flavor in the heart of South Jakarta — for shopping-day meals, family visits, and stylish lifestyle dining.
+        </p>
+        <div class="mt-7 grid grid-cols-2 gap-3">
+          <a href="https://www.google.com/maps/search/SURA+Gandaria+City" target="_blank" rel="noopener" class="press inline-flex items-center justify-between h-11 px-4 rounded-full bg-ink-50 text-ink-950 text-[13px] tracking-tight hover:bg-white transition">
+            Open in Maps
+            <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://wa.me/" target="_blank" rel="noopener" class="press inline-flex items-center justify-between h-11 px-4 rounded-full border border-white/15 text-[13px] hover:bg-white/5 transition">
+            WhatsApp
+            <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Summarecon Kelapa Gading (North Jakarta) -->
+      <article class="col-span-12 md:col-span-6 group relative overflow-hidden rounded-[2rem] md:rounded-[2.5rem] bg-ink-900/80 glass-edge p-8 md:p-10">
+        <div class="flex items-center justify-between gap-4">
+          <div class="flex items-center gap-2 text-[11px] tracking-[0.22em] uppercase text-ember">
+            <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            North Jakarta
+          </div>
+          <span class="font-mono text-[10.5px] text-ink-300">04 / 04</span>
+        </div>
+        <h3 class="mt-5 font-display text-3xl md:text-4xl leading-[0.95] tracking-tightest-2">SURA<br/>Summarecon Mall Kelapa Gading</h3>
+        <p class="mt-3 text-ink-200/90 text-[14.5px] leading-relaxed max-w-[34ch]">
+          Korean dining in one of North Jakarta's most active shopping destinations. Suitable for family meals and repeat visits.
+        </p>
+        <div class="mt-7 grid grid-cols-2 gap-3">
+          <a href="https://www.google.com/maps/search/SURA+Summarecon+Mall+Kelapa+Gading" target="_blank" rel="noopener" class="press inline-flex items-center justify-between h-11 px-4 rounded-full bg-ink-50 text-ink-950 text-[13px] tracking-tight hover:bg-white transition">
+            Open in Maps
+            <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://wa.me/" target="_blank" rel="noopener" class="press inline-flex items-center justify-between h-11 px-4 rounded-full border border-white/15 text-[13px] hover:bg-white/5 transition">
+            WhatsApp
+            <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ───────── SOCIAL PROOF & VISIT OCCASIONS ───────── -->
+<section class="relative py-20 md:py-28 border-t border-white/[0.06]">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+    <div class="grid grid-cols-12 gap-8 md:gap-12 items-center reveal">
+      <div class="col-span-12 md:col-span-7">
+        <div class="flex items-center gap-3 text-[11px] tracking-[0.22em] uppercase text-ember mb-6">
+          <span class="w-6 h-px bg-ember"></span> Made for sharing
+        </div>
+        <p class="font-display fr-italic text-3xl md:text-5xl leading-[1.05] text-ink-50 max-w-[24ch]">
+          Stylish enough to share. Comfortable enough to return.
+        </p>
+        <p class="mt-6 max-w-[52ch] text-ink-300 text-[14.5px] leading-relaxed">
+          For lunch, dinner, family meals, casual dates, and moments worth sharing — SURA is designed to feel welcoming whether you're discovering Korean food for the first time or you already love it.
+        </p>
+      </div>
+      <div class="col-span-12 md:col-span-5">
+        <ul class="grid grid-cols-2 gap-3 font-mono text-[12.5px]">
+          <li class="rounded-2xl border border-white/[0.08] p-4">
+            <div class="text-ink-50">#SURAJakarta</div>
+            <div class="mt-1 text-ink-400">Tag your moment</div>
+          </li>
+          <li class="rounded-2xl border border-white/[0.08] p-4">
+            <div class="text-ink-50">#SURAFromKorea</div>
+            <div class="mt-1 text-ink-400">Royal-inspired</div>
+          </li>
+          <li class="rounded-2xl border border-white/[0.08] p-4">
+            <div class="text-ink-50">#WagyuHamburgSteak</div>
+            <div class="mt-1 text-ink-400">Signature</div>
+          </li>
+          <li class="rounded-2xl border border-white/[0.08] p-4">
+            <div class="text-ink-50">#Tteokgalbi</div>
+            <div class="mt-1 text-ink-400">Royal Korean</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── FOOTER ───────── -->
+<footer class="relative pt-20 pb-12 border-t border-white/[0.06] bg-ink-950">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+    <div class="grid grid-cols-12 gap-10">
+      <div class="col-span-12 md:col-span-5">
+        <div class="flex items-center gap-3">
+          <svg viewBox="0 0 32 32" class="w-7 h-7 text-ember" aria-hidden="true">
+            <circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" stroke-width="1"/>
+            <path d="M8 20c1.6-3.5 4-5 8-5s6.4 1.5 8 5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            <circle cx="16" cy="12" r="1.4" fill="currentColor"/>
+          </svg>
+          <span class="font-display text-[19px] tracking-tightest-2 leading-none">SURA<span class="text-ember">.</span></span>
+        </div>
+        <p class="mt-6 max-w-[42ch] text-ink-300 text-[14.5px] leading-relaxed">
+          A modern Korean dining experience in Jakarta, inspired by the royal meal served to Korean kings. The Taste of Happiness, Crafted with Care.
+        </p>
+      </div>
+      <div class="col-span-6 md:col-span-2">
+        <div class="text-[11px] tracking-[0.22em] uppercase text-ink-400 mb-4">Visit</div>
+        <ul class="space-y-2 text-[14.5px]">
+          <li><a href="#visit" class="hover:text-ember transition">Lotte Mall</a></li>
+          <li><a href="#visit" class="hover:text-ember transition">Lippo Mall Puri</a></li>
+          <li><a href="#visit" class="hover:text-ember transition">Gandaria City</a></li>
+          <li><a href="#visit" class="hover:text-ember transition">Kelapa Gading</a></li>
+        </ul>
+      </div>
+      <div class="col-span-6 md:col-span-2">
+        <div class="text-[11px] tracking-[0.22em] uppercase text-ink-400 mb-4">Experience</div>
+        <ul class="space-y-2 text-[14.5px]">
+          <li><a href="#story" class="hover:text-ember transition">Our Story</a></li>
+          <li><a href="#menu" class="hover:text-ember transition">Menu</a></li>
+          <li><a href="#ritual" class="hover:text-ember transition">The Ritual</a></li>
+          <li><a href="#fire" class="hover:text-ember transition">Live Kitchen</a></li>
+        </ul>
+      </div>
+      <div class="col-span-12 md:col-span-3">
+        <div class="text-[11px] tracking-[0.22em] uppercase text-ink-400 mb-4">Contact</div>
+        <ul class="space-y-2 text-[14.5px]">
+          <li><a href="https://wa.me/" target="_blank" rel="noopener" class="hover:text-ember transition inline-flex items-center gap-2">WhatsApp inquiry<svg viewBox="0 0 24 24" class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="https://www.instagram.com/surafromkorea?igsh=MWVjeGlwc2s1YTgweA%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="hover:text-ember transition inline-flex items-center gap-2">Instagram<svg viewBox="0 0 24 24" class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="https://www.tiktok.com/@surafromkorea?_t=8nBiCo954K0&_r=1" target="_blank" rel="noopener" class="hover:text-ember transition inline-flex items-center gap-2">TikTok<svg viewBox="0 0 24 24" class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="#" class="hover:text-ember transition inline-flex items-center gap-2">Partnership & media</a></li>
+          <li><a href="#" class="hover:text-ember transition inline-flex items-center gap-2">Careers</a></li>
+        </ul>
+        <p class="mt-5 text-[11.5px] text-ink-400 leading-relaxed">
+          For mall leasing, partnership, or media inquiries, contact our management team.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-16 pt-6 border-t border-white/[0.06] flex flex-col md:flex-row items-start md:items-center justify-between gap-4 font-mono text-[11.5px] text-ink-400">
+      <div>© 2026 SURA · Operated across Korea, China &amp; Indonesia since 2008</div>
+      <div class="flex items-center gap-4">
+        <a href="https://www.instagram.com/surafromkorea?igsh=MWVjeGlwc2s1YTgweA%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="hover:text-ink-100 transition">Instagram</a>
+        <span>·</span>
+        <a href="https://www.tiktok.com/@surafromkorea?_t=8nBiCo954K0&_r=1" target="_blank" rel="noopener" class="hover:text-ink-100 transition">TikTok</a>
+        <span>·</span>
+        <a href="https://wa.me/" target="_blank" rel="noopener" class="hover:text-ink-100 transition">WhatsApp</a>
+        <span>·</span>
+        <a href="#" class="hover:text-ink-100 transition">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ── Nav transparency on scroll
+  const nav = document.getElementById('nav');
+  const onScroll = () => {
+    if (window.scrollY > 24) {
+      nav.classList.add('bg-ink-950/70','backdrop-blur-xl','border-white/[0.06]');
+    } else {
+      nav.classList.remove('bg-ink-950/70','backdrop-blur-xl','border-white/[0.06]');
+    }
+  };
+  document.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // ── Intersection-based reveals (no scroll listener)
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    }
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach((el) => io.observe(el));
+
+  // ── Hero video: play once, hold the last frame, never restart
+  const heroVideo = document.getElementById('heroVideo');
+  if (heroVideo) {
+    heroVideo.addEventListener('ended', () => {
+      // Some browsers (Safari) flash the poster on end — pin to the last frame defensively
+      const d = heroVideo.duration;
+      if (Number.isFinite(d) && d > 0) heroVideo.currentTime = Math.max(0, d - 0.04);
+      heroVideo.pause();
+    }, { once: true });
+  }
+
+  // ── Mid-section autoplay video: pause when off-screen to save GPU/battery
+  const cinemaVideo = document.getElementById('cinemaVideo');
+  if (cinemaVideo) {
+    const playObs = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (e.isIntersecting) cinemaVideo.play().catch(() => {});
+        else cinemaVideo.pause();
+      }
+    }, { threshold: 0.1 });
+    playObs.observe(cinemaVideo);
+  }
+</script>
+</body>
+</html>
