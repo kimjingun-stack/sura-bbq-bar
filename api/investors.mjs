@@ -1,0 +1,5 @@
+import {timingSafeEqual} from 'node:crypto';
+import {buildVersion} from '../build/lib.mjs';
+let cachedDocument;
+export function authorized(candidate,expected){if(typeof candidate!=='string'||typeof expected!=='string'||expected.length<24)return false;const a=Buffer.from(candidate),b=Buffer.from(expected);return a.length===b.length&&timingSafeEqual(a,b);}
+export default function handler(req,res){res.setHeader('X-Robots-Tag','noindex, nofollow, noarchive');res.setHeader('Cache-Control','private, no-store, max-age=0');res.setHeader('Referrer-Policy','no-referrer');const url=new URL(req.url,'https://www.sura-korea.com');const tokens=url.searchParams.getAll('k');if(!['GET','HEAD'].includes(req.method)||tokens.length!==1||!authorized(tokens[0],process.env.INVESTOR_ACCESS_TOKEN)){res.statusCode=404;res.end('Not found');return;}res.setHeader('Content-Type','text/html; charset=utf-8');try{const html=cachedDocument??=buildVersion('investment');res.statusCode=200;res.end(req.method==='HEAD'?'':html);}catch{res.statusCode=503;res.end('Unavailable');}}

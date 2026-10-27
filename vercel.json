@@ -1,0 +1,47 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/public",
+  "functions": {
+    "api/investors.mjs": {
+      "includeFiles": "{index.html,data/facts.json,data/i18n.json}"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/investors",
+      "destination": "/api/investors"
+    },
+    {
+      "source": "/investors/:path*",
+      "destination": "/api/investors"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/investors/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+import {chromium} from '@playwright/test';import fs from 'node:fs';import path from 'node:path';import {createServer} from './server.mjs';import {versions} from '../build/lib.mjs';
+process.env.INVESTOR_ACCESS_TOKEN='local-only-test-token-never-deploy';
+process.env.PW_TEST_SCREENSHOT_NO_FONTS_READY='1';
+const output=path.resolve(process.env.SURA_QA_DIR||'test-results');fs.mkdirSync(output,{recursive:true});
+const server=createServer();await new Promise(r=>server.listen(0,'127.0.0.1',r));const base='http://127.0.0.1:'+server.address().port;
+const browser=await chromium.launch({channel:"chrome"});let checks=[],failures=[];try{
+for(const [version,{path:route}]of Object.entries(versions)){
+ if(process.env.SURA_QA_VERSIONS&&!process.env.SURA_QA_VERSIONS.split(',').includes(version))continue;
+ const page=await browser.newPage({viewport:{width:1440,height:1000},reducedMotion:'reduce'});let errors=[];page.on('pageerror',e=>errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+ for(const lang of ['en','ko','id','zh'])for(const width of (['en','ko'].includes(lang)?[1440,1024,768,390,360]:[1440,390])){
+  errors=[];await page.setViewportSize({width,height:1000});let url=base+route+'?lang='+lang+(version==='investment'?'&k='+process.env.INVESTOR_ACCESS_TOKEN:'');let response;if(width===1440){response=await page.goto(url,{waitUntil:'load'});await page.evaluate(()=>Promise.race([document.fonts.ready,new Promise(r=>setTimeout(r,6000))]));}else response={status:()=>200};await page.locator('img').evaluateAll(imgs=>Promise.all(imgs.map(img=>{img.loading='eager';return img.decode().catch(()=>{});})));let overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);let broken=await page.locator('img').evaluateAll(imgs=>imgs.filter(i=>!i.complete||i.naturalWidth===0).map(i=>i.src));let missing=await page.evaluate(()=>Array.from(document.querySelectorAll('[data-i18n]')).map(e=>e.dataset.i18n).filter(k=>!Object.hasOwn(window.SURA_I18N[document.documentElement.lang==='zh-Hans'?'zh':document.documentElement.lang],k)));
+  let name=`${version}-${lang}-${width}`;await page.screenshot({path:output+'/'+name+'.png',fullPage:true});let row={name,status:response.status(),overflow,errors:[...new Set(errors)],broken,missing};checks.push(row);console.log(name,overflow,errors.length);if(overflow>0||errors.length||broken.length||missing.length||row.status!==200)failures.push(row);
+ }
+ // Test each button using native button keyboard activation, followed by Escape and focus return.
+ await page.goto(base+route+'?lang=en'+(version==='investment'?'&k='+process.env.INVESTOR_ACCESS_TOKEN:''));
+ const controls=page.locator('main button[data-detail]');for(let i=0;i<await controls.count();i++){let b=controls.nth(i);await b.focus();await b.press('Enter');if(!(await page.locator('#dlg').isVisible()))throw Error(version+' button did not open');if(!await page.locator('#dlgTitle').innerText())throw Error('Missing modal title');await page.keyboard.press('Escape');if(await page.locator('#dlg').isVisible())throw Error('Escape failed');if(!await b.evaluate(e=>e===document.activeElement))throw Error('Focus not restored');}
+ let first=await controls.count()?await controls.first().getAttribute('data-detail'):null;if(first){await page.goto(base+route+'?lang=ko'+(version==='investment'?'&k='+process.env.INVESTOR_ACCESS_TOKEN:'')+'#detail='+first);if(!await page.locator('#dlg').isVisible())throw Error('Hash did not open');await page.keyboard.press('Tab');await page.keyboard.press('Escape');if(await page.evaluate(()=>location.hash))throw Error('Hash not cleared');await page.evaluate(()=>dispatchEvent(new Event('beforeprint')));if(await page.locator('.print-details>.dt').count()===0)throw Error('Print panels missing');await page.evaluate(()=>dispatchEvent(new Event('afterprint')));}
+ await page.close();console.log('Verified',version);
+}
+}finally{fs.writeFileSync(output+'/results.json',JSON.stringify({checks,failures},null,2));await browser.close();server.close();}
+console.log(`${checks.length} responsive/language cases; ${failures.length} failures`);if(failures.length){console.error(JSON.stringify(failures,null,2));process.exit(1);}

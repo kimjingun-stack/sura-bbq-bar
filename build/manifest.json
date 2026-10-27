@@ -1,0 +1,107 @@
+{
+  "general": {
+    "path": "/",
+    "bytes": 164804,
+    "sections": [
+      "cover",
+      "story",
+      "philosophy",
+      "special",
+      "signature",
+      "guests",
+      "ratings",
+      "stores",
+      "journey"
+    ]
+  },
+  "leasing": {
+    "path": "/leasing/",
+    "bytes": 289923,
+    "sections": [
+      "cover",
+      "glance",
+      "story",
+      "philosophy",
+      "special",
+      "signature",
+      "guests",
+      "ratings",
+      "stores",
+      "system",
+      "partners",
+      "leadership",
+      "organization",
+      "journey",
+      "leasing-requirements"
+    ]
+  },
+  "investment": {
+    "path": "/investors/",
+    "bytes": 302092,
+    "sections": [
+      "cover",
+      "glance",
+      "story",
+      "philosophy",
+      "special",
+      "signature",
+      "guests",
+      "ratings",
+      "stores",
+      "system",
+      "partners",
+      "leadership",
+      "organization",
+      "journey",
+      "leasing-requirements",
+      "investment"
+    ]
+  },
+  "partnership": {
+    "path": "/partners/",
+    "bytes": 160237,
+    "sections": [
+      "cover",
+      "story",
+      "philosophy",
+      "special",
+      "signature",
+      "stores",
+      "system",
+      "partners",
+      "journey",
+      "collaboration-checklist"
+    ]
+  },
+  "career": {
+    "path": "/careers/",
+    "bytes": 196618,
+    "sections": [
+      "cover",
+      "story",
+      "philosophy",
+      "special",
+      "signature",
+      "stores",
+      "system",
+      "leadership",
+      "organization",
+      "journey",
+      "grow"
+    ]
+  },
+  "executive": {
+    "path": "/executive/",
+    "bytes": 38729,
+    "sections": [
+      "executive-summary"
+    ]
+  },
+  "brief": {
+    "path": "/brief/",
+    "bytes": 39802,
+    "sections": [
+      "visual"
+    ]
+  }
+}
