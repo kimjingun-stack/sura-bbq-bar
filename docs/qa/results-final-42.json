@@ -1,0 +1,341 @@
+{
+  "checks": [
+    {
+      "name": "investment-en-1440",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "investment-en-1024",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "investment-en-768",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "investment-en-390",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "investment-en-360",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "investment-ko-1440",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "investment-ko-1024",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "investment-ko-768",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "investment-ko-390",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "investment-ko-360",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "investment-id-1440",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "investment-id-390",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "investment-zh-1440",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "investment-zh-390",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "executive-en-1440",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "executive-en-1024",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "executive-en-768",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "executive-en-390",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "executive-en-360",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "executive-ko-1440",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "executive-ko-1024",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "executive-ko-768",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "executive-ko-390",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "executive-ko-360",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "executive-id-1440",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "executive-id-390",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "executive-zh-1440",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "executive-zh-390",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "brief-en-1440",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "brief-en-1024",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "brief-en-768",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "brief-en-390",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "brief-en-360",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "brief-ko-1440",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "brief-ko-1024",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "brief-ko-768",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "brief-ko-390",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "brief-ko-360",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "brief-id-1440",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "brief-id-390",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "brief-zh-1440",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    },
+    {
+      "name": "brief-zh-390",
+      "status": 200,
+      "overflow": 0,
+      "errors": [],
+      "broken": [],
+      "missing": []
+    }
+  ],
+  "failures": []
+}

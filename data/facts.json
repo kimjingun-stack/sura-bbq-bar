@@ -1,0 +1,1912 @@
+{
+  "version": "2026.10.1",
+  "updated_at": "2026-10-27",
+  "owner": {
+    "general": "Marketing",
+    "leasing": "CEO Office",
+    "investment": "Chairman",
+    "partnership": "Marketing",
+    "career": "HR",
+    "executive": "CEO Office",
+    "brief": "Marketing"
+  },
+  "brand": {
+    "name": "SURA",
+    "category": "Korean Hamburg Steak",
+    "tagline": "The Taste of Happiness Crafted with Care.",
+    "tagline_ko": "정성으로 빚은 행복의 맛",
+    "founded": 2023,
+    "first_store": "2024-09",
+    "entity": "PT. SURA AND BIXI RESTAURANT MANAGEMENT",
+    "website": "https://www.sura-korea.com",
+    "positioning": "Premium Korean Dining",
+    "profile_month": "OCTOBER 2026",
+    "copyright_year": 2026
+  },
+  "kpi": {
+    "stores": 5,
+    "seats": 376,
+    "staff": 140,
+    "google_reviews": 21896,
+    "google_avg": 4.98,
+    "stores_at_5": 3,
+    "reviews_verified_at": "2026-10-26",
+    "grab_award": {
+      "title": "Top 10 Most Favorite Asian Dining",
+      "year": 2026,
+      "evidence": null
+    },
+    "steaks_sold": null,
+    "members": 50000,
+    "instagram": 16000,
+    "tiktok": 19000,
+    "target_2027_stores": 15,
+    "rating_note": "CEO confirmed: three stores at 5.0; two below 5.0.",
+    "perfect_rating": "5.0",
+    "jakarta_stores": 4,
+    "surabaya_stores": 1
+  },
+  "stores": [
+    {
+      "id": "puri",
+      "name": "Lippo Mall Puri",
+      "city": "Jakarta",
+      "area": "West Jakarta",
+      "opened": "2024-09",
+      "seats": 100,
+      "floor": null,
+      "zone": null,
+      "map": null,
+      "rating": 5,
+      "reviews": 10127,
+      "manager": "Imam",
+      "area_sqm": null,
+      "photo": null
+    },
+    {
+      "id": "lotte",
+      "name": "Lotte Mall Jakarta",
+      "city": "Jakarta",
+      "area": "South Jakarta",
+      "opened": "2024-10",
+      "seats": 58,
+      "floor": null,
+      "zone": null,
+      "map": null,
+      "rating": 4.9,
+      "reviews": 6822,
+      "manager": "Yazid",
+      "area_sqm": null,
+      "photo": null
+    },
+    {
+      "id": "gandaria",
+      "name": "Gandaria City",
+      "city": "Jakarta",
+      "area": "South Jakarta",
+      "opened": "2025-09",
+      "seats": 80,
+      "floor": null,
+      "zone": null,
+      "map": null,
+      "rating": 5,
+      "reviews": 2664,
+      "manager": "Deka",
+      "area_sqm": null,
+      "photo": null
+    },
+    {
+      "id": "smkg",
+      "name": "Summarecon Mall Kelapa Gading",
+      "city": "Jakarta",
+      "area": "North Jakarta",
+      "opened": "2025-10",
+      "seats": 80,
+      "floor": null,
+      "zone": null,
+      "map": null,
+      "rating": 5,
+      "reviews": 2064,
+      "manager": "Intan",
+      "area_sqm": null,
+      "photo": null
+    },
+    {
+      "id": "pakuwon",
+      "name": "Pakuwon Mall Surabaya",
+      "city": "Surabaya",
+      "area": "Surabaya",
+      "opened": "2026-09",
+      "seats": 58,
+      "floor": "2F",
+      "zone": null,
+      "map": null,
+      "rating": 4.8,
+      "reviews": 219,
+      "manager": "Ronal",
+      "turns_per_day": "6–9",
+      "turns_period": "5 weeks since opening",
+      "area_sqm": null,
+      "photo": null
+    }
+  ],
+  "menu": {
+    "signature_set": {
+      "items": [
+        "Wagyu Steak",
+        "Tteokgalbi",
+        "Cheese Wagyu Steak"
+      ],
+      "price_idr": 209000,
+      "tax_included": null
+    },
+    "additional": [
+      {
+        "name": "Chicken Steak",
+        "stores": "Jakarta"
+      }
+    ],
+    "sauces": [
+      "Himalayan Salt & Garlic",
+      "Ssamjang",
+      "Yuzu Mayo",
+      "Sambal",
+      null,
+      null
+    ],
+    "sides": [
+      "Kimchi",
+      "Potato salad",
+      "Maesil tomato",
+      "Honey pumpkin"
+    ],
+    "refill": [
+      "Rice",
+      "Soup"
+    ],
+    "egg": "Omega-3 egg",
+    "wagyu_percentage": "100%"
+  },
+  "guests": {
+    "core": "Women 25–45, couples, friends, families",
+    "muslim_share": "10–20%",
+    "avg_spend_idr": "230,000–260,000",
+    "show_in": [
+      "leasing",
+      "investment"
+    ],
+    "age_range": "25–45"
+  },
+  "operations": {
+    "divisions": [
+      {
+        "id": "fin",
+        "status": "live"
+      },
+      {
+        "id": "mk",
+        "status": "live"
+      },
+      {
+        "id": "hr",
+        "status": "live"
+      },
+      {
+        "id": "ck",
+        "status": "live",
+        "sites": [
+          "Jakarta",
+          "Surabaya"
+        ]
+      },
+      {
+        "id": "fit",
+        "status": "live"
+      }
+    ],
+    "manager_app": {
+      "status": "live",
+      "features": [
+        "daily_reports",
+        "ai_reviews",
+        "new_store_prep",
+        "menu_dev",
+        "ai_marketing",
+        "chat_translation"
+      ]
+    }
+  },
+  "partners": [
+    {
+      "name": "Spikoe Resep Kuno",
+      "period": "2026-10",
+      "city": "Surabaya"
+    },
+    {
+      "name": "Sambal Bu Rudy",
+      "period": "2026-11 – 2027-01",
+      "city": "Surabaya"
+    }
+  ],
+  "expansion": {
+    "principle": "Enter each city through its single most influential mall first.",
+    "under_review": [
+      "Medan",
+      "Bali",
+      "Semarang",
+      "Bandung",
+      "Batam",
+      "Balikpapan"
+    ],
+    "confirmed": [],
+    "overseas": "in preparation",
+    "target_year": 2027
+  },
+  "investment": {
+    "model_summary": null,
+    "unit_economics": null,
+    "new_store_model": null,
+    "payback": null,
+    "capital_requirement": null,
+    "market_opportunity": null,
+    "standardization": null,
+    "expansion_strategy": null,
+    "management": null,
+    "governance": null,
+    "risks": null
+  },
+  "contact": {
+    "name": "Kim Jingun",
+    "title": "CEO & Founder",
+    "email": "kimjingun@sura-korea.com",
+    "whatsapp": "+62 812-9523-9210",
+    "approved": false
+  },
+  "leadership": {
+    "career_started": 2008
+  },
+  "training": {
+    "review_day": 30
+  },
+  "review_sources": {
+    "verified": false,
+    "source": "Existing profile quotations; individual review URLs and capture evidence pending"
+  },
+  "legacy_numeric_claims": {
+    "claim_0001": {
+      "value": "2026",
+      "context": "ko:cover.label",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0002": {
+      "value": "10",
+      "context": "ko:cover.label",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0008": {
+      "value": "2026",
+      "context": "ko:glance.k5.l",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0010": {
+      "value": "3",
+      "context": "ko:sp.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0012": {
+      "value": "3",
+      "context": "ko:sig.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0013": {
+      "value": "6",
+      "context": "ko:sig.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0014": {
+      "value": "6",
+      "context": "ko:sig.how.3",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0016": {
+      "value": "1",
+      "context": "ko:gu.c3",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0017": {
+      "value": "2026",
+      "context": "ko:rt.note",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0018": {
+      "value": "10",
+      "context": "ko:rt.note",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0019": {
+      "value": "26",
+      "context": "ko:rt.note",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0020": {
+      "value": "10,000",
+      "context": "ko:rt.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0022": {
+      "value": "10/10",
+      "context": "ko:vo.1.tr",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0023": {
+      "value": "9/10",
+      "context": "ko:vo.1.tr",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0024": {
+      "value": "11/10",
+      "context": "ko:vo.1.tr",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0025": {
+      "value": "10",
+      "context": "ko:rc.1.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0026": {
+      "value": "2026",
+      "context": "ko:rc.1.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0027": {
+      "value": "5",
+      "context": "ko:rc.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0028": {
+      "value": "2",
+      "context": "ko:rc.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0029": {
+      "value": "2025",
+      "context": "ko:rc.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0030": {
+      "value": "8",
+      "context": "ko:rc.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0031": {
+      "value": "2026",
+      "context": "ko:rc.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0032": {
+      "value": "4",
+      "context": "ko:rc.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0033": {
+      "value": "2026",
+      "context": "ko:rc.3.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0034": {
+      "value": "10",
+      "context": "ko:rc.3.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0035": {
+      "value": "9/10",
+      "context": "ko:rc.4.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0036": {
+      "value": "5",
+      "context": "ko:rc.5.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0047": {
+      "value": "2026",
+      "context": "ko:st.hl.t",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0048": {
+      "value": "9",
+      "context": "ko:st.hl.t",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0049": {
+      "value": "6~9",
+      "context": "ko:st.hl.unit",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0050": {
+      "value": "5",
+      "context": "ko:st.hl.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0051": {
+      "value": "58",
+      "context": "ko:st.hl.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0052": {
+      "value": "6~9",
+      "context": "ko:st.hl.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0068": {
+      "value": "20",
+      "context": "ko:ld.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0071": {
+      "value": "1",
+      "context": "ko:jo.n2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0072": {
+      "value": "2",
+      "context": "ko:jo.n3",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0073": {
+      "value": "3",
+      "context": "ko:jo.n4",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0074": {
+      "value": "4",
+      "context": "ko:jo.n5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0075": {
+      "value": "5",
+      "context": "ko:jo.n6",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0077": {
+      "value": "5만",
+      "context": "ko:sy.mk.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0078": {
+      "value": "4",
+      "context": "ko:sy.app.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0079": {
+      "value": "30",
+      "context": "ko:sy.sv.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0080": {
+      "value": "0–30",
+      "context": "ko:sy.sv.s1.s",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0081": {
+      "value": "2",
+      "context": "ko:sy.sv.s2.s",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0082": {
+      "value": "5–10",
+      "context": "ko:sy.sv.s4.s",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0083": {
+      "value": "5",
+      "context": "ko:sy.app.f2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0084": {
+      "value": "3",
+      "context": "ko:sy.app.f4.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0085": {
+      "value": "5만",
+      "context": "ko:sy.mk.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0086": {
+      "value": "1.6만",
+      "context": "ko:sy.mk.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0087": {
+      "value": "1.9만",
+      "context": "ko:sy.mk.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0088": {
+      "value": "6~7",
+      "context": "ko:sy.mk.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0089": {
+      "value": "4~5",
+      "context": "ko:sy.mk.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0090": {
+      "value": "4",
+      "context": "ko:sy.mk.d.4",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0091": {
+      "value": "2",
+      "context": "ko:sy.hr.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0092": {
+      "value": "30",
+      "context": "ko:sy.hr.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0093": {
+      "value": "5",
+      "context": "ko:sy.hr.d.4",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0094": {
+      "value": "6",
+      "context": "ko:sy.ck.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0095": {
+      "value": "3",
+      "context": "ko:sy.ck.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0096": {
+      "value": "100",
+      "context": "ko:sy.fit.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0097": {
+      "value": "5",
+      "context": "ko:sy.fit.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0098": {
+      "value": "1",
+      "context": "ko:sy.qc.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0099": {
+      "value": "2",
+      "context": "ko:sy.qc.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0100": {
+      "value": "100",
+      "context": "ko:sy.qc.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0101": {
+      "value": "90",
+      "context": "ko:sy.qc.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0102": {
+      "value": "1",
+      "context": "ko:sy.sv.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0103": {
+      "value": "0–30",
+      "context": "ko:sy.sv.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0104": {
+      "value": "30",
+      "context": "ko:sy.sv.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0105": {
+      "value": "2",
+      "context": "ko:sy.sv.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0106": {
+      "value": "2",
+      "context": "ko:sy.sv.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0107": {
+      "value": "3",
+      "context": "ko:sy.sv.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0108": {
+      "value": "3",
+      "context": "ko:sy.sv.d.3",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0109": {
+      "value": "4",
+      "context": "ko:sy.sv.d.4",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0110": {
+      "value": "5–10",
+      "context": "ko:sy.sv.d.4",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0111": {
+      "value": "5",
+      "context": "ko:sy.sv.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0112": {
+      "value": "6",
+      "context": "ko:sy.sv.d.6",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0113": {
+      "value": "30",
+      "context": "ko:sy.sv.d.9",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0114": {
+      "value": "4.6",
+      "context": "ko:sy.sv.d.9",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0115": {
+      "value": "30%",
+      "context": "ko:sy.sv.d.9",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0116": {
+      "value": "40%",
+      "context": "ko:sy.sv.d.9",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0117": {
+      "value": "4.6",
+      "context": "ko:sy.fb.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0118": {
+      "value": "30%",
+      "context": "ko:sy.fb.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0119": {
+      "value": "40%",
+      "context": "ko:sy.fb.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0120": {
+      "value": "2026",
+      "context": "id:cover.label",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0126": {
+      "value": "2026",
+      "context": "id:glance.k5.l",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0128": {
+      "value": "3",
+      "context": "id:sp.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0130": {
+      "value": "3",
+      "context": "id:sig.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0132": {
+      "value": "26",
+      "context": "id:rt.note",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0133": {
+      "value": "2026",
+      "context": "id:rt.note",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0134": {
+      "value": "5,0",
+      "context": "id:rt.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0135": {
+      "value": "10.000",
+      "context": "id:rt.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0136": {
+      "value": "10/10",
+      "context": "id:vo.1.tr",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0137": {
+      "value": "9/10",
+      "context": "id:vo.1.tr",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0138": {
+      "value": "11/10",
+      "context": "id:vo.1.tr",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0139": {
+      "value": "10",
+      "context": "id:rc.1.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0140": {
+      "value": "2026",
+      "context": "id:rc.1.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0141": {
+      "value": "5",
+      "context": "id:rc.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0142": {
+      "value": "2025",
+      "context": "id:rc.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0143": {
+      "value": "2026",
+      "context": "id:rc.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0144": {
+      "value": "2026",
+      "context": "id:rc.3.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0145": {
+      "value": "9/10",
+      "context": "id:rc.4.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0151": {
+      "value": "2026",
+      "context": "id:st.hl.t",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0152": {
+      "value": "6–9",
+      "context": "id:st.hl.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0153": {
+      "value": "58",
+      "context": "id:st.hl.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0161": {
+      "value": "20",
+      "context": "id:ld.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0164": {
+      "value": "1",
+      "context": "id:jo.n2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0165": {
+      "value": "2",
+      "context": "id:jo.n3",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0166": {
+      "value": "3",
+      "context": "id:jo.n4",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0167": {
+      "value": "4",
+      "context": "id:jo.n5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0168": {
+      "value": "5",
+      "context": "id:jo.n6",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0170": {
+      "value": "50.000",
+      "context": "id:sy.mk.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0171": {
+      "value": "30",
+      "context": "id:sy.sv.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0172": {
+      "value": "0–30",
+      "context": "id:sy.sv.s1.s",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0173": {
+      "value": "2",
+      "context": "id:sy.sv.s2.s",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0174": {
+      "value": "5–10",
+      "context": "id:sy.sv.s4.s",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0175": {
+      "value": "50.000",
+      "context": "id:sy.mk.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0176": {
+      "value": "16",
+      "context": "id:sy.mk.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0177": {
+      "value": "19",
+      "context": "id:sy.mk.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0178": {
+      "value": "6–7",
+      "context": "id:sy.mk.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0179": {
+      "value": "4–5",
+      "context": "id:sy.mk.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0180": {
+      "value": "4",
+      "context": "id:sy.mk.d.4",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0181": {
+      "value": "2",
+      "context": "id:sy.hr.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0182": {
+      "value": "30",
+      "context": "id:sy.hr.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0183": {
+      "value": "100",
+      "context": "id:sy.fit.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0184": {
+      "value": "100",
+      "context": "id:sy.qc.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0185": {
+      "value": "90",
+      "context": "id:sy.qc.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0186": {
+      "value": "1",
+      "context": "id:sy.sv.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0187": {
+      "value": "0–30",
+      "context": "id:sy.sv.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0188": {
+      "value": "2",
+      "context": "id:sy.sv.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0189": {
+      "value": "2",
+      "context": "id:sy.sv.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0190": {
+      "value": "3",
+      "context": "id:sy.sv.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0191": {
+      "value": "3",
+      "context": "id:sy.sv.d.3",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0192": {
+      "value": "4",
+      "context": "id:sy.sv.d.4",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0193": {
+      "value": "5–10",
+      "context": "id:sy.sv.d.4",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0194": {
+      "value": "5",
+      "context": "id:sy.sv.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0195": {
+      "value": "6",
+      "context": "id:sy.sv.d.6",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0196": {
+      "value": "30",
+      "context": "id:sy.sv.d.9",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0197": {
+      "value": "4,6",
+      "context": "id:sy.sv.d.9",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0198": {
+      "value": "30%",
+      "context": "id:sy.sv.d.9",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0199": {
+      "value": "40%",
+      "context": "id:sy.sv.d.9",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0200": {
+      "value": "4,6",
+      "context": "id:sy.fb.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0201": {
+      "value": "30%",
+      "context": "id:sy.fb.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0202": {
+      "value": "40%",
+      "context": "id:sy.fb.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0203": {
+      "value": "2026",
+      "context": "zh:cover.label",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0204": {
+      "value": "10",
+      "context": "zh:cover.label",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0210": {
+      "value": "2026",
+      "context": "zh:glance.k5.l",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0212": {
+      "value": "3",
+      "context": "zh:sp.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0214": {
+      "value": "3",
+      "context": "zh:sig.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0215": {
+      "value": "2026",
+      "context": "zh:rt.note",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0216": {
+      "value": "10",
+      "context": "zh:rt.note",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0217": {
+      "value": "26",
+      "context": "zh:rt.note",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0218": {
+      "value": "10,000",
+      "context": "zh:rt.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0220": {
+      "value": "10/10",
+      "context": "zh:vo.1.tr",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0221": {
+      "value": "9/10",
+      "context": "zh:vo.1.tr",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0222": {
+      "value": "11/10",
+      "context": "zh:vo.1.tr",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0223": {
+      "value": "2026",
+      "context": "zh:rc.1.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0224": {
+      "value": "2025",
+      "context": "zh:rc.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0225": {
+      "value": "8",
+      "context": "zh:rc.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0226": {
+      "value": "2026",
+      "context": "zh:rc.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0227": {
+      "value": "4",
+      "context": "zh:rc.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0228": {
+      "value": "2026",
+      "context": "zh:rc.3.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0229": {
+      "value": "10",
+      "context": "zh:rc.3.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0230": {
+      "value": "9/10",
+      "context": "zh:rc.4.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0241": {
+      "value": "2026",
+      "context": "zh:st.hl.t",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0242": {
+      "value": "9",
+      "context": "zh:st.hl.t",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0243": {
+      "value": "58",
+      "context": "zh:st.hl.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0244": {
+      "value": "6–9",
+      "context": "zh:st.hl.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0256": {
+      "value": "20",
+      "context": "zh:ld.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0259": {
+      "value": "1",
+      "context": "zh:jo.n2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0260": {
+      "value": "2",
+      "context": "zh:jo.n3",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0261": {
+      "value": "3",
+      "context": "zh:jo.n4",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0262": {
+      "value": "4",
+      "context": "zh:jo.n5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0263": {
+      "value": "5",
+      "context": "zh:jo.n6",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0265": {
+      "value": "5",
+      "context": "zh:sy.mk.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0266": {
+      "value": "30",
+      "context": "zh:sy.sv.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0267": {
+      "value": "0–30",
+      "context": "zh:sy.sv.s1.s",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0268": {
+      "value": "2",
+      "context": "zh:sy.sv.s2.s",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0269": {
+      "value": "5–10",
+      "context": "zh:sy.sv.s4.s",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0270": {
+      "value": "5",
+      "context": "zh:sy.mk.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0271": {
+      "value": "1.6",
+      "context": "zh:sy.mk.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0272": {
+      "value": "1.9",
+      "context": "zh:sy.mk.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0273": {
+      "value": "6–7",
+      "context": "zh:sy.mk.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0274": {
+      "value": "4–5",
+      "context": "zh:sy.mk.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0275": {
+      "value": "2",
+      "context": "zh:sy.hr.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0276": {
+      "value": "30",
+      "context": "zh:sy.hr.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0277": {
+      "value": "100",
+      "context": "zh:sy.fit.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0278": {
+      "value": "100",
+      "context": "zh:sy.qc.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0279": {
+      "value": "90",
+      "context": "zh:sy.qc.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0280": {
+      "value": "1",
+      "context": "zh:sy.sv.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0281": {
+      "value": "0–30",
+      "context": "zh:sy.sv.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0282": {
+      "value": "30",
+      "context": "zh:sy.sv.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0283": {
+      "value": "2",
+      "context": "zh:sy.sv.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0284": {
+      "value": "2",
+      "context": "zh:sy.sv.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0285": {
+      "value": "3",
+      "context": "zh:sy.sv.d.3",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0286": {
+      "value": "4",
+      "context": "zh:sy.sv.d.4",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0287": {
+      "value": "5–10",
+      "context": "zh:sy.sv.d.4",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0288": {
+      "value": "5",
+      "context": "zh:sy.sv.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0289": {
+      "value": "6",
+      "context": "zh:sy.sv.d.6",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0290": {
+      "value": "30",
+      "context": "zh:sy.sv.d.9",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0291": {
+      "value": "4.6",
+      "context": "zh:sy.sv.d.9",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0292": {
+      "value": "30%",
+      "context": "zh:sy.sv.d.9",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0293": {
+      "value": "40%",
+      "context": "zh:sy.sv.d.9",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0294": {
+      "value": "4.6",
+      "context": "zh:sy.fb.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0295": {
+      "value": "30%",
+      "context": "zh:sy.fb.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0296": {
+      "value": "40%",
+      "context": "zh:sy.fb.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0297": {
+      "value": "2026",
+      "context": "en:cover.label",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0298": {
+      "value": "4",
+      "context": "en:glance.k1.s",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0299": {
+      "value": "1",
+      "context": "en:glance.k1.s",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0303": {
+      "value": "2026",
+      "context": "en:glance.k5.l",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0305": {
+      "value": "3",
+      "context": "en:sp.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0306": {
+      "value": "3",
+      "context": "en:sig.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0307": {
+      "value": "26",
+      "context": "en:rt.note",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0308": {
+      "value": "2026",
+      "context": "en:rt.note",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0310": {
+      "value": "10,000",
+      "context": "en:rt.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0311": {
+      "value": "10",
+      "context": "en:rc.1.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0312": {
+      "value": "2026",
+      "context": "en:rc.1.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0313": {
+      "value": "5",
+      "context": "en:rc.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0314": {
+      "value": "2025",
+      "context": "en:rc.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0315": {
+      "value": "2026",
+      "context": "en:rc.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0316": {
+      "value": "2026",
+      "context": "en:rc.3.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0317": {
+      "value": "9/10",
+      "context": "en:rc.4.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0323": {
+      "value": "2026",
+      "context": "en:st.hl.t",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0324": {
+      "value": "6",
+      "context": "en:st.hl.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0325": {
+      "value": "9",
+      "context": "en:st.hl.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0326": {
+      "value": "58",
+      "context": "en:st.hl.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0327": {
+      "value": "30",
+      "context": "en:sy.sv.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0328": {
+      "value": "0–30",
+      "context": "en:sy.sv.s1.s",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0329": {
+      "value": "2",
+      "context": "en:sy.sv.s2.s",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0330": {
+      "value": "5–10",
+      "context": "en:sy.sv.s4.s",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0331": {
+      "value": "2026",
+      "context": "en:pa.1.period",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0332": {
+      "value": "2026",
+      "context": "en:pa.2.period",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0338": {
+      "value": "20",
+      "context": "en:ld.2.p",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0341": {
+      "value": "1",
+      "context": "en:jo.n2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0342": {
+      "value": "2",
+      "context": "en:jo.n3",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0343": {
+      "value": "3",
+      "context": "en:jo.n4",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0344": {
+      "value": "4",
+      "context": "en:jo.n5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0345": {
+      "value": "5",
+      "context": "en:jo.n6",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0347": {
+      "value": "6–7",
+      "context": "en:sy.mk.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0348": {
+      "value": "4–5",
+      "context": "en:sy.mk.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0349": {
+      "value": "4",
+      "context": "en:sy.mk.d.4",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0350": {
+      "value": "2",
+      "context": "en:sy.hr.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0351": {
+      "value": "30",
+      "context": "en:sy.hr.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0352": {
+      "value": "100",
+      "context": "en:sy.fit.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0353": {
+      "value": "100",
+      "context": "en:sy.qc.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0354": {
+      "value": "90",
+      "context": "en:sy.qc.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0355": {
+      "value": "1",
+      "context": "en:sy.sv.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0356": {
+      "value": "0–30",
+      "context": "en:sy.sv.d.1",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0357": {
+      "value": "2",
+      "context": "en:sy.sv.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0358": {
+      "value": "2",
+      "context": "en:sy.sv.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0359": {
+      "value": "3",
+      "context": "en:sy.sv.d.2",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0360": {
+      "value": "3",
+      "context": "en:sy.sv.d.3",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0361": {
+      "value": "4",
+      "context": "en:sy.sv.d.4",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0362": {
+      "value": "5–10",
+      "context": "en:sy.sv.d.4",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0363": {
+      "value": "5",
+      "context": "en:sy.sv.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0364": {
+      "value": "6",
+      "context": "en:sy.sv.d.6",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0365": {
+      "value": "30",
+      "context": "en:sy.sv.d.9",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0366": {
+      "value": "4.6",
+      "context": "en:sy.sv.d.9",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0367": {
+      "value": "30%",
+      "context": "en:sy.sv.d.9",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0368": {
+      "value": "40%",
+      "context": "en:sy.sv.d.9",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0369": {
+      "value": "4.6",
+      "context": "en:sy.fb.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0370": {
+      "value": "30%",
+      "context": "en:sy.fb.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0371": {
+      "value": "40%",
+      "context": "en:sy.fb.d.5",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0374": {
+      "value": "02",
+      "context": "HTML:glance",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0376": {
+      "value": "10",
+      "context": "HTML:glance",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0378": {
+      "value": "03",
+      "context": "HTML:story",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0379": {
+      "value": "04",
+      "context": "HTML:philosophy",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0380": {
+      "value": "05",
+      "context": "HTML:special",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0381": {
+      "value": "06",
+      "context": "HTML:signature",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0382": {
+      "value": "1",
+      "context": "HTML:signature",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0383": {
+      "value": "2",
+      "context": "HTML:signature",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0384": {
+      "value": "3",
+      "context": "HTML:signature",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0385": {
+      "value": "07",
+      "context": "HTML:guests",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0386": {
+      "value": "08",
+      "context": "HTML:ratings",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0397": {
+      "value": "09",
+      "context": "HTML:voices",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0398": {
+      "value": "10/10",
+      "context": "HTML:voices",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0399": {
+      "value": "9/10",
+      "context": "HTML:voices",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0400": {
+      "value": "11/10",
+      "context": "HTML:voices",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0401": {
+      "value": "10",
+      "context": "HTML:recognition",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0402": {
+      "value": "10",
+      "context": "HTML:recognition",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0403": {
+      "value": "2026",
+      "context": "HTML:recognition",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0404": {
+      "value": "11",
+      "context": "HTML:stores",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0405": {
+      "value": "01",
+      "context": "HTML:stores",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0406": {
+      "value": "02",
+      "context": "HTML:stores",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0407": {
+      "value": "03",
+      "context": "HTML:stores",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0408": {
+      "value": "04",
+      "context": "HTML:stores",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0409": {
+      "value": "05",
+      "context": "HTML:stores",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0410": {
+      "value": "6–9",
+      "context": "HTML:stores",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0411": {
+      "value": "12",
+      "context": "HTML:system",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0412": {
+      "value": "01",
+      "context": "HTML:system",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0413": {
+      "value": "02",
+      "context": "HTML:system",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0414": {
+      "value": "03",
+      "context": "HTML:system",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0415": {
+      "value": "04",
+      "context": "HTML:system",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0416": {
+      "value": "05",
+      "context": "HTML:system",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0417": {
+      "value": "06",
+      "context": "HTML:system",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0418": {
+      "value": "13",
+      "context": "HTML:partners",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0419": {
+      "value": "14",
+      "context": "HTML:leadership",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0420": {
+      "value": "15",
+      "context": "HTML:organization",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0421": {
+      "value": "16",
+      "context": "HTML:journey",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0423": {
+      "value": "2024.09",
+      "context": "HTML:journey",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0424": {
+      "value": "2024.10",
+      "context": "HTML:journey",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0425": {
+      "value": "2025.09",
+      "context": "HTML:journey",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0426": {
+      "value": "2025.10",
+      "context": "HTML:journey",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0427": {
+      "value": "2026.09",
+      "context": "HTML:journey",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0429": {
+      "value": "01",
+      "context": "HTML:visual",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0430": {
+      "value": "02",
+      "context": "HTML:visual",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0431": {
+      "value": "03",
+      "context": "HTML:visual",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0432": {
+      "value": "04",
+      "context": "HTML:visual",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0433": {
+      "value": "05",
+      "context": "HTML:visual",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0434": {
+      "value": "06",
+      "context": "HTML:visual",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0441": {
+      "value": "1",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0442": {
+      "value": "2",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0443": {
+      "value": "3",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0444": {
+      "value": "03",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0445": {
+      "value": "11",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0446": {
+      "value": "01",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0447": {
+      "value": "02",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0448": {
+      "value": "03",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0449": {
+      "value": "04",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0450": {
+      "value": "05",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0451": {
+      "value": "6–9",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0452": {
+      "value": "13",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0453": {
+      "value": "14",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0455": {
+      "value": "16",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0457": {
+      "value": "2024.09",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0458": {
+      "value": "2024.10",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0459": {
+      "value": "2025.09",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0460": {
+      "value": "2025.10",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    },
+    "claim_0461": {
+      "value": "2026.09",
+      "context": "HTML:shell",
+      "source": "Existing main profile; approval pending where not in CEO ledger"
+    }
+  }
+}
